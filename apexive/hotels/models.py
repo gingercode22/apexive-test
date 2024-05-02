@@ -28,8 +28,3 @@ class Reservation(models.Model):
     start = models.DateField()
     end = models.DateField()
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations')
-
-
-
-
-# 4) Get list of hotels with only one free room (for today)
